@@ -25,10 +25,10 @@ app.use('/api/leave', leaveRouter )
 app.use('/api/setting', settingRouter )
 app.use('/api/dashboard', dashboardRouter )
 
-// // Root route
-// app.get('/', (req, res) => {
-//     res.status(200).send('Welcome to the TeamSync API!');
-// });
+// Root route
+app.get('/', (req, res) => {
+    res.status(200).send('Welcome to the TeamSync API!');
+});
 
 app.listen(process.env.PORT, ()=>{
     console.log(`Server is running on port ${process.env.PORT}`)
