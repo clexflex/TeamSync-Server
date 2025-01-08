@@ -9,8 +9,6 @@ import settingRouter from './routes/setting.js'
 import dashboardRouter from './routes/dashboard.js'
 import connectToDatabase from './db/db.js'
 
-// import {userRegister} from './userSeed.js'
-
 connectToDatabase()
 const app = express()
 app.use(cors({
